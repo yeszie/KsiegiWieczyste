@@ -1,0 +1,3 @@
+Tutaj w wyniku pracy skryptu z AI utworzone będą pliki txt (na podstawie html).
+
+Następnie skrypt txt2xls załaduje je do pliku excela.

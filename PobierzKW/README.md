@@ -32,3 +32,15 @@ Obliczanie cyfry kontrolnej zostało opisane w dokumentacji, ale temat ten może
 Średnia prędkość pobierania danych na jednym komputerze (jednym adresie IP) wynosi od kilku do kilkunastu tysięcy ksiąg na dobę. W Polsce istnieje ponad 20 milionów ksiąg wieczystych. Ponieważ każdy sąd rejonowy ma swoją unikalną numerację, można ograniczyć pobieranie danych tylko do wybranego zakresu.
 
 Zauważyłem, że numeracja ksiąg wieczystych jest rosnąca, co oznacza, że jeśli dla danej jednostki sądowej istnieje 150 tysięcy ksiąg, to numery wyższe niż 150 tysięcy nie będą zawierały danych. Może się jednak zdarzyć, że w pewnych przedziałach występują "dziury", czyli niektóre numery nie mają przypisanej księgi, mimo że inne numery z tego zakresu są poprawne.
+
+## Przykładowe KW
+
+Skrytp przetwarza wszystkie KW zawarte w pliku tekstowym. Skopiowałem kilka wybranych KW ze strony z licytacjami komorniczymi które są ogólnodostępne. Można tam wpisać własne numery. Numery trzeba oczywiście mieć i czy się je zgadnie czy w inny sposób zdobędzie to tylko one są przetwarzane.
+
+## Działanie skryptu
+
+Skrypt kontynuuje pracę od miejsca gdzie skończył w taki sposób że gdy natknie się na istniejące już wcześniej pobrane dane to je pomija. Inną metodą jest usunięcie z pliku do przetwarzania numerów już pobranych (we własnym zakresie).
+
+## Do czego to może być pomocne?
+
+Czasmi biura księgowe (oraz inne osoby) potrzebują weryfikować czy w księdze coś się nie zmieniło. Można więc uruchomić skrypt aby pobierał treść w regularnych odstępach czasu na numery ksiąg które chcemy monitorować i metodą porównawczą zaalertować jeśli w księdze coś się zmieni. Np. biura pośrednictwa (agenci) mogą sprawdzać czy nie doszły zapisy do hipoteki albo czy właściciel się nie zmienił. Oczywiście wymaga to dopisania reszty kodu w zależności od tego co chcemy sprawdzać.

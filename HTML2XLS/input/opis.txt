@@ -1,0 +1,1 @@
+Do tego folderu trzeba dać zapisane KW w formacie HTML - wygenerowane osobnym skryptem.
